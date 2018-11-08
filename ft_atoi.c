@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 16:49:36 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 18:30:07 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 18:45:00 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int			ft_atoi(const char *str)
 	res = 0;
 	while (ft_isdigit(str[i]))
 	{
-		res = res * 10 + i - '0';
+		res = res * 10 + str[i] - '0';
 		i++;
 	}
 	return (symbol * res);
