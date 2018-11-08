@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 15:01:30 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 15:43:31 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 15:52:27 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t  start;
+	size_t	start;
 	size_t	i;
 	int		found;
 
