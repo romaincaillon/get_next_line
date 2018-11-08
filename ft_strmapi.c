@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/06 20:27:01 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 20:24:36 by rcaillon         ###   ########.fr       */
+/*   Created: 2018/11/08 20:10:12 by rcaillon          #+#    #+#             */
+/*   Updated: 2018/11/08 20:16:30 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (*s1 != *s2 || *s1 == '\0')
-		return (*s1 - *s2);
-	else
-		return (ft_strcmp(s1 + 1, s2 + 1));
+	char	*new;
+	size_t	s_len;
+	size_t	i;
+
+	s_len = ft_strlen(s);
+	new = ft_strnew(s_len);
+	if (new == NULL)
+		return (NULL);
+	i = 0;
+	while (i < s_len)
+	{
+		new[i] = (*f)(i, s[i]);
+		i++;
+	}
+	return (new);
 }

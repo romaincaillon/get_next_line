@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/06 20:27:01 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 20:24:36 by rcaillon         ###   ########.fr       */
+/*   Created: 2018/11/08 20:26:37 by rcaillon          #+#    #+#             */
+/*   Updated: 2018/11/08 20:31:04 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if (*s1 != *s2 || *s1 == '\0')
-		return (*s1 - *s2);
-	else
-		return (ft_strcmp(s1 + 1, s2 + 1));
+	return (ft_strncmp(s1, s2, n) == 0 ? 1 : 0);
 }
