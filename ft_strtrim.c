@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/08 19:26:01 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 20:51:51 by rcaillon         ###   ########.fr       */
+/*   Created: 2018/11/08 21:07:20 by rcaillon          #+#    #+#             */
+/*   Updated: 2018/11/08 21:42:52 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+static int	is_space(char c)
 {
-	char *str;
+	return (c == ' ' || c == '\n' || c == '\t');
+}
 
-	str = (char *)ft_memalloc(size + 1);
-	return (str);
+char		*ft_strtrim(char const *s)
+{
+	size_t	first;
+	size_t	last;
+	size_t	s_len;
+
+	s_len = ft_strlen(s);
+	first = 0;
+	while (is_space(s[first]))
+		first++;
+	last = s_len - 1;
+	while (is_space(s[last]) && last > 0)
+		last--;
+	if (last < first)
+		return (ft_strdup(""));
+	else
+		return (ft_strsub(s, first, last - first + 1));
 }
