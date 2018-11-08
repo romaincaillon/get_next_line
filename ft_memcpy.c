@@ -6,11 +6,10 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:08:00 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/07 14:22:57 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 16:39:41 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

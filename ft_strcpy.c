@@ -6,11 +6,10 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:26:45 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 14:26:48 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 16:41:51 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strcpy(char *dest, const char *src)

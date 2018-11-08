@@ -6,11 +6,10 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:44:08 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 14:24:56 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 16:39:31 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

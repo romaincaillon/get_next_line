@@ -6,11 +6,10 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:00:25 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/07 14:51:09 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/08 16:39:09 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
