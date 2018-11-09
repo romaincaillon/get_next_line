@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 15:53:08 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/09 18:12:56 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 22:09:42 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ char					**ft_strsplit(char const *s, char c)
 	unsigned long	nb_words;
 	char			**tab;
 
+	if (s == NULL)
+		return (NULL);
 	s_len = ft_strlen(s);
 	cpy = ft_strdup(s);
 	if (cpy == NULL)

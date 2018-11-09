@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 21:07:20 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 21:42:52 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 22:10:28 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char		*ft_strtrim(char const *s)
 	size_t	last;
 	size_t	s_len;
 
+	if (s == NULL)
+		return (NULL);
 	s_len = ft_strlen(s);
 	first = 0;
 	while (is_space(s[first]))
