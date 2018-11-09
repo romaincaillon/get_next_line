@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 20:36:30 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/08 20:55:52 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 22:04:12 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char	*sub;
 	size_t	i;
 
+	if (s == NULL)
+		return (NULL);
 	sub = ft_strnew(len);
 	if (sub == NULL)
 		return (NULL);
