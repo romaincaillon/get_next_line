@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 18:20:35 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/09 18:22:19 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 22:46:02 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr(char const *s)
 {
-	if (*s != '\0')
+	if (s != NULL && *s != '\0')
 	{
 		ft_putchar(*s);
 		ft_putstr(s + 1);
