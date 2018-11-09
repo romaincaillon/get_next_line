@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 19:45:52 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/09 21:42:43 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 21:58:44 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	if (s != NULL && *s != '\0')
+	if (s != NULL && f != NULL && *s != '\0')
 	{
 		(*f)(s);
 		ft_striter(s + 1, f);

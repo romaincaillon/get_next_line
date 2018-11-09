@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 20:10:12 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/09 21:46:55 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/09 21:57:54 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	s_len;
 	size_t	i;
 
-	if (s == NULL)
+	if (s == NULL || f == NULL)
 		return (NULL);
 	s_len = ft_strlen(s);
 	new = ft_strnew(s_len);
