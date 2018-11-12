@@ -22,7 +22,9 @@ SOURCES = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 		  ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c ft_strequ.c \
 		  ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c ft_strsplit.c \
 		  ft_itoa.c ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c \
-		  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+		  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
+		  ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
+		  ft_lstmap.c
 
 OBJECTS = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 		  ft_memchr.o ft_memcmp.o ft_strlen.o ft_strdup.o ft_strcpy.o \
@@ -34,7 +36,9 @@ OBJECTS = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o \
 		  ft_striter.o ft_striteri.o ft_strmap.o ft_strmapi.o ft_strequ.o \
 		  ft_strnequ.o ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o \
 		  ft_itoa.o ft_putchar.o ft_putstr.o ft_putendl.o ft_putnbr.o \
-		  ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+		  ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
+		  ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o \
+		  ft_lstmap.o
 
 all: $(NAME)
 
