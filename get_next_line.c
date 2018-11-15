@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 09:34:30 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/15 15:56:02 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/15 21:03:01 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,9 @@ static t_list	*get_new_file(t_list **files, int fd)
 		return (NULL);
 	}
 	new_file = ft_lstnew(new_content, sizeof(int) + sizeof(char *));
+	free(new_content);
 	if (new_file == NULL)
-	{
-		free(*p_str);
-		free(new_content);
-	}
+		return (NULL);
 	ft_lstadd(files, new_file);
 	return (new_file);
 }
@@ -45,6 +43,8 @@ static t_list	*get_file(t_list **files, int fd)
 {
 	t_list	*file;
 
+	if (files == NULL)
+		return (NULL);
 	file = *files;
 	while (file != NULL)
 	{
