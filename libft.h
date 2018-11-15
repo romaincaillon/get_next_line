@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 16:15:34 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/12 09:16:08 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/15 15:45:14 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,6 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new_elem);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void				ft_strswap(char **a, char **b);
 
 #endif
