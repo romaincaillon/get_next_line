@@ -6,7 +6,7 @@
 /*   By: rcaillon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 09:34:30 by rcaillon          #+#    #+#             */
-/*   Updated: 2018/11/15 21:03:01 by rcaillon         ###   ########.fr       */
+/*   Updated: 2018/11/16 11:30:53 by rcaillon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,11 @@ int				get_next_line(const int fd, char **line)
 		return (-1);
 	if (fill_line(line, p_save, endline) == 1)
 		return (-1);
-	return (!(endline == NULL && *p_save[0] == '\0' && *line[0] == '\0'));
+	if ((endline == NULL && *p_save[0] == '\0' && *line[0] == '\0'))
+	{
+		free(*line);
+		return (0);
+	}
+	else
+		return (1);
 }
